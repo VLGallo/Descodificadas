@@ -214,6 +214,15 @@ h2 {
   padding-bottom: 5%;
 }
 
+.tabela-horarios {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
 .studio-localization p{
   font-family: "Nunito Sans", sans-serif;
   color: #df71ff;
@@ -237,7 +246,8 @@ h2 {
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  padding: 5%;
+  padding: 2%;
+  padding-bottom: 1%;
 }
 
 .institutional-media p {
