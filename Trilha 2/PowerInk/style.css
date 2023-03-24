@@ -260,6 +260,25 @@ h2 {
   width: 50%;
 }
 
+table {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 14px;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+th, td {
+	border: 1px solid #df71ff;
+	padding: 8px;
+	text-align: center;
+}
+th {
+	background-color: #df71ff;
+	font-weight: bold;
+  font-size: 20px;
+}
+
 /*Seção "Contato" */
 #contact {
   padding: 1%;
