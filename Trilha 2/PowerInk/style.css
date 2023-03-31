@@ -25,13 +25,16 @@ a:focus {
   text-decoration: underline;
 }
 
-/* Variáveis das cores */
+/* Variáveis das cores e das fontes */
 :root {
   --preto: #000;
   --rosa: #da85b7;
   --rosa_claro: #ffb0e1;
   --lilas: #b73fda;
   --branco: #fff;
+
+  --fonte_padrao:"Nunito Sans", sans-serif;
+  --fonte_titulos: "MuseoModerno", cursive;
 }
 
 /* Cabeçalho */
@@ -83,7 +86,7 @@ nav {
   font-size: 1.5em;
   font-weight: 500;
   padding: 0 10px;
-  font-family: "MuseoModerno", cursive;
+  font-family: var(--fonte_titulos);
 }
 
 .menu a:hover {
@@ -107,7 +110,7 @@ nav {
   font-size: 7em;
   margin-bottom: 20px;
   color: var(--rosa);
-  font-family: "MuseoModerno", cursive;
+  font-family: var(--fonte_titulos);
 }
 
 .home-content p {
@@ -115,13 +118,13 @@ nav {
   line-height: 1.5;
   margin-bottom: 30px;
   color: var(--branco);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
 }
 
 .home-content button {
   background-color: var(--rosa);
   color: var(--preto);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   border: none;
   border-radius: 10px;
   padding: 10px 30px;
@@ -135,7 +138,7 @@ nav {
 
 /* Galeria */
 h2 {
-  font-family: "MuseoModerno", cursive;
+  font-family: var(--fonte_titulos);
   font-size: 60px;
   color: var(--rosa);
   text-align: center;
@@ -162,7 +165,7 @@ h2 {
 }
 
 .gallery-item figcaption {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   font-weight: bold;
   padding: 10px;
   color: var(--branco);
@@ -233,7 +236,7 @@ h2 {
 }
 
 .studio-localization p{
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   color: var(--rosa);
   padding: 3%;
   font-size: 22px;
@@ -247,7 +250,7 @@ h2 {
   padding: 3%;
   font-size: 22px;
   color: var(--rosa);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
 }
 
 .institutional-media {
@@ -262,7 +265,7 @@ h2 {
 .institutional-media p {
   font-size: 1.2em;
   color: var(--rosa);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   margin-bottom: 30px;
 }
 
@@ -287,7 +290,7 @@ table {
 	margin: 0 auto;
 	font-size: 14px;
   color: var(--branco);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
 }
 
 th, td {
@@ -300,7 +303,8 @@ th, td {
 th {
 	background-color: var(--lilas);
 	font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: var(--fonte_titulos);
 }
 
 /*Seção "Contato" */
@@ -332,7 +336,7 @@ th {
   font-size: 22px;
   font-weight: bold;
   color: var(--branco);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
 }
 
 .contact-form input[type="email"] {
@@ -347,7 +351,7 @@ th {
 .contact-form button[type="submit"] {
   background-color: var(--rosa);
   color: var(--branco);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -359,7 +363,7 @@ th {
 font-size: 22px;
 font-weight: bold;
 color: var(--rosa);
-font-family: "Nunito Sans", sans-serif;
+font-family: var(--fonte_padrao);
 }
 
 .contact-whats {
@@ -376,7 +380,7 @@ font-family: "Nunito Sans", sans-serif;
 
 .contact-whats h3 {
   color: var(--rosa_claro);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
   padding-bottom: 10px;
 }
 
@@ -398,5 +402,5 @@ footer p {
   margin: 0;
   font-size: 20px;
   color: var(--branco);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--fonte_padrao);
 }
