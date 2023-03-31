@@ -87,6 +87,7 @@ nav {
   font-weight: 500;
   padding: 0 10px;
   font-family: var(--fonte_titulos);
+  transform: translate(0px, 36px);
 }
 
 .menu a:hover {
@@ -368,28 +369,29 @@ font-family: var(--fonte_padrao);
 
 .contact-whats {
   position: fixed;
-  top: 80vh;
-  left: 90vw;
+  top: 85vh;
+  left: 92vw;
 }
 
 .contact-whats-container{
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.contact-whats h3 {
-  color: var(--rosa_claro);
-  font-family: var(--fonte_padrao);
-  padding-bottom: 10px;
+  transition: width 2s;
 }
 
 .contact-whats a img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 66px;
+  transition: width 1s;
 }
+
+.contact-whats a img:hover{
+  width: 80px;
+}
+
 
 /* Estilos para o rodapé */
 footer {
