@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta página possui apenas fins didáticos">
     <meta name="keywords" content="estúdio de tatuagem para mulheres, estúdio feminino de tatuagem, tatuadora mulher">
-    <meta name="author" content="Vanessa L Gallo">
+    <meta name="author" content="Vanessa L. Gallo">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,13 @@
             <li><a href="#home">Página Inicial</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg></li>
             <li><a href="#gallery">Galeria</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg></li>
             <li><a href="#works">Trabalhos</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg></li>
-            <li><a href="#about">Sobre o Estúdio</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg></li>
+            <li><a href="#about">Sobre o Estúdio</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg>
+                <ul class="submenu">
+                  <li><a href="#event">Evento</a></li>
+                  <li><a href="#time">Atendimento</a></li>
+                  <li><a href="#localization">Localização</a></li>
+                </ul>
+              </li>
             <li><a href="#contact">Contato</a><svg height="80" width="80"><circle cx="40" cy="40" r="25" fill="var(--lilas)" opacity="0.25"/></svg></li>
           </ul>
        </nav>
@@ -130,7 +136,7 @@
           </p>
         </div>
 <!-- Vídeo-->
-        <div class="institutional-media">
+        <div class="institutional-media" id="event">
           <div class="institutional-video">
             <iframe
               width="720"
@@ -155,7 +161,7 @@
       </div>
       <div class="tabela-horarios">
 <!-- Tabela de horários-->
-      <table>
+      <table id="time">
         <tr>
           <th>Dias da Semana</th>
           <th>Horário de Atendimento</th>
@@ -171,7 +177,7 @@
     </table>
       </div>
 <!-- Google Maps-->
-      <div class="studio-localization">
+      <div class="studio-localization" id="localization">
         <h2>Localização</h2>
         <p>Endereço: Rua X, número Y, Jardim Paraíso - São Carlos/SP</p>
         <iframe

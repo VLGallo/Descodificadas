@@ -74,9 +74,11 @@ nav {
 
 .menu li {
   display: flex;
-  margin-left: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .menu a {
@@ -87,10 +89,45 @@ nav {
   font-weight: 500;
   padding: 0 10px;
   font-family: var(--fonte_titulos);
-  transform: translate(0px, 36px);
+  transform: translate(0px, 40px);
 }
 
 .menu a:hover {
+  color: var(--branco);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+  background-color: var(--preto);
+  opacity: 0.9;
+  padding: 15px;
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu li {
+  color: var(--lilas);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: var(--fonte_titulos);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu li:hover .submenu a {
+  display: block;  
+  transform: translate(0px, 0px);
+}
+
+.submenu li a:hover {
   color: var(--branco);
 }
 
