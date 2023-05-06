@@ -186,32 +186,19 @@ h2 {
 }
 
 .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 0 3em;
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  place-items: center;
 }
 
 .gallery-item {
-  width: 20%;
-  margin-bottom: 1.5em;
   border: solid 0.4em var(--rosa);
   border-radius: 0.6em;
-  text-align: center;
+  width: 95%;
 }
 
-.gallery-item figcaption {
-  font-family: var(--fonte_padrao);
-  font-weight: bold;
-  padding: 0.8em;
-  font-size: 0.8em;
-  color: var(--branco);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 90%;
-}
 
 /* Trabalhos prontos*/
 .previousWorks {
@@ -222,10 +209,10 @@ h2 {
 
 .previous-works-pics {
   width: 600px;
-  height: 450px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .previous-works-pics-wrapper {
@@ -239,7 +226,7 @@ h2 {
 
 .previous-works-pics-wrapper img {
   width: 600px;
-  height: 400px;
+  height: 500px;
   border: solid 0.4em var(--rosa);
   border-radius: 1em;
 }
@@ -550,8 +537,13 @@ footer p {
     height: 85vh;
   }
 
+  
+  .gallery-container {
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr ;
+  }
+
   .gallery-item{
-    width: 40%;
+    width: 100%;
   }
 
   h2 {
@@ -604,11 +596,19 @@ footer p {
     width: 100%;
   }
 
+  .previous-works-pics{
+    width: 400px;
+  }
+  
+  .previous-works-pics-wrapper img {
+    width: 388px; 
+  }
+
   .studio-pics, .institutional-media {
     flex-wrap: wrap;
   }
 
-  .gallery-item figcaption, .studio-localization p, .contact-form label {
+  .studio-localization p, .contact-form label {
     font-size: 1em;
   }
 
