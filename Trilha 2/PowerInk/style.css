@@ -193,10 +193,19 @@ h2 {
   place-items: center;
 }
 
-.gallery-item {
+.gallery-item img {
   border: solid 0.4em var(--rosa);
   border-radius: 0.6em;
   width: 95%;
+}
+
+.gallery-item figcaption{
+  font-family: var(--fonte_padrao);
+  font-weight: bold;
+  font-size: 0.7em;
+  padding: 0.4em;
+  color: var(--branco);
+  text-align: center;
 }
 
 
