@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soma dos Múltiplos de 3 e 5</title>
+</head>
+<body>
+  <h1>Soma dos Múltiplos de 3 e 5</h1>
+
+  <p id="resultado"></p>
+
+  <script>
+    // Encontra a soma dos múltiplos de 3 e 5 abaixo de 1000
+    var soma = 0;
+    for (var i = 1; i < 1000; i++) {
+      if (i % 3 === 0 || i % 5 === 0) {
+        soma += i;
+      }
+    }
+
+    // Exibe o resultado no elemento HTML com o id "resultado"
+    var resultadoElement = document.getElementById("resultado");
+    resultadoElement.textContent = "A soma dos múltiplos de 3 e 5 abaixo de 1000 é: " + soma;
+  </script>
+</body>
+</html>
