@@ -7,32 +7,27 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,img,cen
   font: inherit;
   vertical-align: baseline;
 }
-/* Definir estilos padrão para elementos de texto */
 body {
   line-height: 1;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
-/* Definir estilos padrão para links */
 a {
   text-decoration: none;
   color: inherit;
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* Variáveis das cores e das fontes */
+/* Variáveis para cores e fontes */
 :root {
   --preto: #000;
   --rosa: #da85b7;
   --rosa_claro: #ffb0e1;
   --lilas: #b73fda;
   --branco: #fff;
-
   --fonte_padrao:"Nunito Sans", sans-serif;
   --fonte_titulos: "MuseoModerno", cursive;
 }
@@ -104,11 +99,6 @@ nav {
   padding: 1em;
 }
 
-.menu li:hover .submenu {
-  display: flex;
-  flex-direction: column;
-}
-
 .submenu li {
   color: var(--lilas);
   text-decoration: none;
@@ -118,13 +108,18 @@ nav {
   padding: 0.5em 0;
 }
 
+.submenu li a:hover {
+  color: var(--branco);
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu li:hover .submenu a {
   display: block;  
   transform: translate(0, 15%);
-}
-
-.submenu li a:hover {
-  color: var(--branco);
 }
 
 /* Página Inicial */
@@ -193,12 +188,6 @@ h2 {
   place-items: center;
 }
 
-.gallery-item img {
-  border: solid 0.4em var(--rosa);
-  border-radius: 0.6em;
-  width: 95%;
-}
-
 .gallery-item figcaption{
   font-family: var(--fonte_padrao);
   font-weight: bold;
@@ -206,6 +195,12 @@ h2 {
   padding: 0.4em;
   color: var(--branco);
   text-align: center;
+}
+
+.gallery-item img {
+  border: solid 0.4em var(--rosa);
+  border-radius: 0.6em;
+  width: 95%;
 }
 
 
@@ -298,12 +293,12 @@ h2 {
  border-radius: 1em;
  border: solid 0.4em var(--lilas);
  box-shadow: 1% 1% 1% rgba(58, 6, 36, 0.6);
-
 }
 
 .cards:hover {
   transform: scale(1.1);
 }
+
 
 .studio-pic {
   width: 100%;
@@ -358,7 +353,7 @@ h2 {
   width: 50%;
 }
 
-.institutional-media iframe {
+.institutional-video iframe {
   width: 100%;
   margin-bottom: 2em;
   border: solid 0.4em var(--rosa);
@@ -473,6 +468,8 @@ color: var(--rosa_claro);
 font-family: var(--fonte_padrao);
 }
 
+
+/*Botão fixo whats" */
 .contact-whats {
   position: fixed;
   top: 85vh;
@@ -545,7 +542,6 @@ footer p {
   .header-container { 
     height: 85vh;
   }
-
   
   .gallery-container {
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr ;
